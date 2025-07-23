@@ -147,3 +147,24 @@ body {
   margin: 0 0.5rem;
   text-decoration: none;
 }
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+/* Make hero full screen and centered */
+.hero {
+  height: 100vh;
+  background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
