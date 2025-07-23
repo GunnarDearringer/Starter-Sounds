@@ -229,7 +229,7 @@ body {
 
 .blog-preview {
   background-color: #f9f9f9;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 5rem; /* Top Right/Left Bottom */
   text-align: center;
 }
 
