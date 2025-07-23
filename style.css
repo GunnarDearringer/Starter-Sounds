@@ -34,19 +34,24 @@ body {
 
 /* Hero */
 .hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+  height: 200vh; /* Makes the hero 2 screens tall */
   background: url('assets/images/hero-bg.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.hero .content {
+  position: sticky;
+  top: 30vh;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
 
 .hero-buttons {
   margin-top: 1.5rem;
