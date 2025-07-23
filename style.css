@@ -30,9 +30,10 @@ body {
 
 /* Parallax Hero Section */
 .hero-parallax {
-  background-image: url('assets/images/ss header.png');
+  background-image: url('assets/images/hero-bg.jpg');
   min-height: 75vh;
-  background-attachment: scroll;
+  height: 75vh; /* 👈 Force height */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
