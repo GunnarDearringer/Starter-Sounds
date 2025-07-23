@@ -157,3 +157,29 @@ body {
   margin: 0 0.5rem;
   text-decoration: none;
 }
+.hero-parallax {
+  background-image: url('assets/images/ss header.png');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-parallax .hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero-parallax {
+    background-attachment: scroll; /* fallback for mobile */
+  }
+}
