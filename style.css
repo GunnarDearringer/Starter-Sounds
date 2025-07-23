@@ -235,7 +235,7 @@ body {
 
 .blog-preview h2 {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem; /* more space under the heading */
 }
 
 .blog-grid {
