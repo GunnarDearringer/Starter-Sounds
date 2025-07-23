@@ -250,7 +250,7 @@ body {
 }
 
 .btn-outline {
-  background: transparent;
+  background-color: transparent;
   border: 2px solid orange;
   color: orange;
   padding: 0.5rem 1rem;
@@ -264,4 +264,8 @@ body {
 .btn-outline:hover {
   background: orange;
   color: white;
+}
+.btn-outline {
+  ... /* previous code */
+  box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.1); /* subtle orange glow */
 }
