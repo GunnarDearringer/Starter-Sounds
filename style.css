@@ -197,3 +197,9 @@ body {
   margin: auto;
   font-size: 1.1rem;
 }
+.product-card .description {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0 1rem;
+  line-height: 1.4;
+}
