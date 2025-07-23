@@ -75,8 +75,20 @@ body {
 
 .btn-outline {
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid orange;
+  color: orange;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.2s ease;
 }
+
+.btn-outline:hover {
+  background: orange;
+  color: white;
+}
+
 
 /* Categories */
 .categories {
@@ -202,4 +214,51 @@ body {
   color: #555;
   margin: 0.5rem 0 1rem;
   line-height: 1.4;
+}
+.blog-preview {
+  background: #f9f9f9;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.blog-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+}
+
+.blog-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+  margin-bottom: 1rem;
 }
