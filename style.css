@@ -269,3 +269,22 @@ body {
   ... /* previous code */
   box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.1); /* subtle orange glow */
 }
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  width: 300px;
+}
+
+.blog-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
