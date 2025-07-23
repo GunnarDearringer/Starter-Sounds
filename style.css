@@ -54,6 +54,12 @@ body {
 .hero-buttons {
   margin-top: 1.5rem;
 }
+.hero-tagline {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-top: 1rem;
+  color: #ddd;
+}
 
 .btn {
   background: orange;
