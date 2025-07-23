@@ -30,7 +30,7 @@ body {
 
 /* Parallax Hero Section */
 .hero-parallax {
-  background-image: url('assets/images/hero-bg.jpg');
+  background-color: red;
   min-height: 75vh;
   height: 75vh; /* 👈 Force height */
   background-attachment: fixed;
