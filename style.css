@@ -32,7 +32,7 @@ body {
 .hero-parallax {
   background-image: url('assets/images/ss header.png');
   min-height: 75vh;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
