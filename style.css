@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 /* General Styles */
 body {
   margin: 0;
@@ -32,22 +28,29 @@ body {
   font-weight: bold;
 }
 
-/* Hero */
-.hero {
-  height: 75vh;
+/* Parallax Hero Section */
+.hero-parallax {
+  background-image: url('assets/images/hero-bg.jpg');
+  min-height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: white;
-  background: url('assets/images/hero-bg.jpg') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  z-index: 1;
+  padding: 2rem;
 }
 
+.hero-parallax .hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.hero-buttons {
   margin-top: 1.5rem;
 }
 
@@ -157,29 +160,10 @@ body {
   margin: 0 0.5rem;
   text-decoration: none;
 }
-.hero-parallax {
-  background-image: url('assets/images/ss header.png');
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 2rem;
-}
 
-.hero-parallax .hero-content {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 15px;
-}
-
+/* Responsive Fallback */
 @media (max-width: 768px) {
   .hero-parallax {
-    background-attachment: scroll; /* fallback for mobile */
+    background-attachment: scroll;
   }
 }
