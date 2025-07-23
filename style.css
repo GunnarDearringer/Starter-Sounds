@@ -147,14 +147,6 @@ body {
   text-align: center;
 }
 
-.blog-list {
-  list-style: none;
-  padding: 0;
-}
-
-.blog-list li {
-  margin: 0.5rem 0;
-}
 
 /* Newsletter */
 .newsletter {
