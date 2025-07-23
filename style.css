@@ -31,18 +31,12 @@ body {
 /* Parallax Hero Section */
 .hero-parallax {
   background-image: url('assets/images/ss-header.png');
-  min-height: 75vh;
   height: 75vh;
-  background-attachment: fixed;
-  background-position: bottom center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-parallax .hero-content {
@@ -167,4 +161,19 @@ body {
   .hero-parallax {
     background-attachment: scroll;
   }
+}
+.hero-parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transform: translateY(0);
+  will-change: transform;
+  z-index: -1;
 }
