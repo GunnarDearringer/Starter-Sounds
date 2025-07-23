@@ -1,3 +1,12 @@
+/* Full Page Scroll Behavior */
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+}
 
 /* General Styles */
 body {
@@ -15,6 +24,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .navbar ul {
@@ -31,10 +43,16 @@ body {
 
 /* Hero */
 .hero {
-  text-align: center;
-  padding: 4rem 2rem;
+  height: 100vh;
   background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 2rem;
 }
 
 .hero-buttons {
@@ -56,6 +74,19 @@ body {
 .btn-outline {
   background: transparent;
   border: 2px solid white;
+}
+
+/* Scroll Arrow */
+.scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 2rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
 
 /* Categories */
@@ -146,25 +177,4 @@ body {
   color: #ccc;
   margin: 0 0.5rem;
   text-decoration: none;
-}
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-
-section {
-  scroll-snap-align: start;
-}
-
-/* Make hero full screen and centered */
-.hero {
-  height: 100vh;
-  background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
 }
