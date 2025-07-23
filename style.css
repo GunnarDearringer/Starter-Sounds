@@ -31,12 +31,18 @@ body {
 /* Parallax Hero Section */
 .hero-parallax {
   background-image: url('assets/images/ss%20header.png');
+  min-height: 75vh;
   height: 75vh;
-  background-position: center bottom;
+  background-attachment: fixed;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
 }
 
 .hero-parallax .hero-content {
