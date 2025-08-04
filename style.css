@@ -99,17 +99,30 @@ body {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
   padding: 1rem;
+  justify-items: center;
+}
+.category {
+  display: inline-block;
+  background: #ff6600;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s, transform 0.2s;
+  text-align: center;
 }
 
-.category {
-  background: #eee;
-  padding: 1rem;
-  border-radius: 10px;
-  font-size: 1.2rem;
+.category:hover {
+  background: #e65c00;
+  transform: scale(1.05);
 }
+
 
 /* Top Picks */
 .top-picks {
