@@ -105,10 +105,11 @@ body {
   justify-items: center;
 }
 .category {
-  display: inline-block;
-  width: 160px;                /* Equal width */
-  height: 60px;                /* Equal height */
-  line-height: 60px;           /* Vertically center text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 60px;
   background: #ff6600;
   color: white;
   text-align: center;
@@ -118,7 +119,10 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: background 0.2s, transform 0.2s;
-  box-sizing: border-box;     /* Ensures padding doesn't affect size */
+  box-sizing: border-box;
+  padding: 0 0.5rem;
+  text-wrap: wrap;      /* allow text wrapping */
+  text-overflow: ellipsis;
 }
 
 .category:hover {
