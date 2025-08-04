@@ -106,17 +106,19 @@ body {
 }
 .category {
   display: inline-block;
+  width: 160px;                /* Equal width */
+  height: 60px;                /* Equal height */
+  line-height: 60px;           /* Vertically center text */
   background: #ff6600;
   color: white;
-  padding: 0.8rem 1.2rem;
-  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
   font-size: 1.1rem;
   font-weight: bold;
+  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: background 0.2s, transform 0.2s;
-  text-align: center;
-  text-decoration: none; /* <- removes underline */
-  appearance: none; /* <- resets default link look */
+  box-sizing: border-box;     /* Ensures padding doesn't affect size */
 }
 
 .category:hover {
